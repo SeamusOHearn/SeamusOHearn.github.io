@@ -1,0 +1,263 @@
+html,body {
+  background-color: white;
+  font-family: garamond;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26pt;
+  padding: 15px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20pt;
+  margin: 50px 15% 50px 15%;
+}
+
+
+h3 { 
+  text-align: left;
+  font-size: 16pt;\
+}
+
+h4{
+  font-size: 14pt;
+
+}
+
+p {
+  font-size: 12pt;
+  font-family: sans-serif;
+  margin:auto 20% auto 20%;
+  display: block;
+}
+
+.pIgnoreMarginPadding{
+  margin-left:0px;
+}
+
+
+/* navigation banner */
+nav {
+	list-style-type: none;
+	padding:0;
+	margin-left:15%;
+}
+
+.topNav {
+  float: left;
+	display: block;
+	padding: 25px 16px;
+	border: 1px solid;
+  border-color: black;
+	color: white;
+	font-size: 16;
+	font-weight: 1000;
+  height: 23px;
+  width: auto;
+  text-align: center;
+  /*text-transform: uppercase;*/
+}
+
+#activeTab{
+	background-color: #1a1a1a;
+  box-shadow: 0 1px 2px 1px gray;
+}
+
+
+/* Banner */
+.banner {
+  background-color: #cccccc;
+  height: 500px;
+  width: 100%;
+  box-shadow: 0 1px 2px 1px gray;
+}
+.bannerImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+}
+
+#profilePic {
+  height: 300px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  box-shadow: 0 1px 2px 1px gray;
+  margin: 10px auto 30px auto;
+}
+
+/*containers to fix footer on pages with low content thanks to
+https://matthewjamestaylor.com/bottom-footer  */
+#container{
+  min-height:100%;
+  position: relative;
+}
+
+#header{
+  background-color: #363636;
+  height: 75px;
+  width: 100%;
+  margin-top: 0;
+  border:1px;
+  box-shadow: 0 1px 2px 1px gray;
+}
+
+#body{
+  padding-bottom: 275px;   /*height of the footer and margin*/
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-color:#363636;
+  margin-top: 200px;
+}
+
+
+/* aligning school and work history places and times */
+.expPlaceAndTime{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.expNotes{
+  font-style: italic;
+}
+
+.expBullets{
+  margin: 10px 20% 10px 20%;
+  font-size: 14pt;
+}
+
+#relatedCourses{
+  margin-left: 20%;
+}
+
+/*badges*/
+.badgeContainer{
+  position: relative;
+  margin: 25px 15px 0 15px;
+  width:100%;
+}
+
+#bingAdsBadge{
+  position:relative;
+  left:15%;
+  width:20%;
+}
+
+#adwordsBadge{
+  position:absolute;
+  left: 40%;
+  width:20%;
+  }
+
+#hubspotBadge{
+  position: absolute;
+  right:15%;
+  width:20%;
+}
+
+
+
+
+/* Scratch Project */
+
+
+.project{
+  background-color: #cccccc;
+  border: solid black;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 1px gray;
+  margin: 25px 15% 25px 15%;
+}
+
+#scratchProjectGame{
+  display: block;
+  width: 480px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border:1px solid black;
+  box-shadow: 0 1px 2px 1px gray;
+
+}
+
+.projectTitle{
+  text-align: center;
+}
+
+.projectLink{
+  display: block;
+  text-align: center;
+  font-size: 14pt;
+  padding:5px;
+}
+
+#scratchSideBySide{
+  display: flex;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+
+}
+
+.scratchTextBox{
+  display: block;
+  width:50%;
+  height: 480px;
+  border: 1px solid black;
+
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  box-shadow: 0 1px 2px 1px gray;
+}
+
+.scratchTextBox p{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.colorizationImage{
+  width: 50%;
+  min-width: 480px;
+  display: block;
+  margin: 20px auto 20px auto;
+  box-shadow: 0 1px 2px 1px gray;
+
+}
+
+/* Contact Info Stuff */
+#contactTable{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+#contactFaviconSpace{
+  width:10%;
+}
+
+.contactFavicon{
+  height: 25pt;
+}
+
+.contactInfo{
+  font-size: 20pt;
+  font-family: sans-serif;
+  padding: 5px 10px 5px 10px;
+}
