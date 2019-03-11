@@ -1,123 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- Necessary stuff -->
     <html lang="en-US">
     <meta charset="UTF-8" />
     <!-- Link to CSS style sheet -->
     <link rel="stylesheet" type="text/css" href="css/portfolioStyle.css">
     <title> Projects | Seamus O&#8217Hearn </title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="container">
-      <div id="header">
-      	<header>
-      		<nav>
-      			<a class="topNav" href="./index.html"> Seamus O&#8217Hearn | Homepage </a>
-      			<a class="topNav" id="activeTab" href="./projects.html"> Projects </a>
-      			<a class="topNav" href="./experience.html"> Work & School History </a>
-      			<a class="topNav" href="./contact.html"> Contact </a>
-      	    </nav>
-      	</header>
-      </div> 
-
-      <div id="body">  
-        <!-- Welcome -->
-        <h1> My Projects </h1>
-
-        <div class="banner">
-          <!-- code image from Luis Gomes on pexels.com  -->
-          <img class="bannerImage" alt="stock photo of computer code on laptop screen" src="images/codeStockPhoto.jpeg"/>
+        <div id="header">
+            <header>
+                <nav>
+                    <a class="topNav" href="./index.html"> Seamus O&#8217Hearn | Homepage </a>
+                    <a class="topNav" id="activeTab" href="./projects.html"> Projects </a>
+                    <a class="topNav" href="./experience.html"> Work & School History </a>
+                    <a class="topNav" href="./contact.html"> Contact </a>
+                </nav>
+            </header>
         </div>
 
+        <div id="body">
+            <!-- Welcome -->
+            <h1> My Projects </h1>
+
+            <div class="banner">
+                <!-- code image from Luis Gomes on pexels.com  -->
+                <img class="bannerImage" alt="stock photo of computer code on laptop screen" src="images/codeStockPhoto.jpeg" />
+            </div>
 
 
-        <h2> School Work </h2>
-          <div class="project">
-            <h3 class="projectTitle">Scratch Project - Intro to Computer Science</h3>
-            <p> This project was to make a simple game in Scratch as an introduction coding using Scratch's block-based visual programming language.</p>
-            <br>
-            <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden  -->
-            <iframe id="scratchProjectGame" src="https://jamesbmadden.github.io/scratch-silicon/#282094157" allowFullscreen scrolling="no"></iframe>
-            <a class="projectLink" href="https://scratch.mit.edu/projects/282094157/"> Check it out on Scratch!</a>
-            <div id="scratchSideBySide">
-              <div class="scratchTextBox">
-                <h4 id="scratchTextTitle"> Instructions</h4>
-                <p>
-                  As a member of the Space Force you have to protect the Moon Base from the alien invasion. If a single alien gets past your line, you lose and are sent back to the start.
-                  <br>
-                  <br>
-                  Click "Enlist Today" to start defending.
-                  ------------------------------------------
-                  Controls
-                  <br>
-                  <br>
-                  W--------Up
-                  <br>
-                  S---------Down
-                  <br>
-                  Space--Fire
-                </p>
+
+            <h2> School Work </h2>
+            <div class="project">
+                <h3 class="projectTitle">Scratch Project - Intro to Computer Science</h3>
+                <p> This project was to make a simple game in Scratch as an introduction coding using Scratch's block-based visual programming language.</p>
                 <br>
-              </div>
-              <div class="scratchTextBox">
-                <h4 id="scratchTextTitle"> Notes and Credits</h4>
+                <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden  -->
+                <iframe id="scratchProjectGame" src="https://jamesbmadden.github.io/scratch-silicon/#282094157" allowFullscreen scrolling="no"></iframe>
+                <a class="projectLink" href="https://scratch.mit.edu/projects/282094157/"> Check it out on Scratch!</a>
+                <div id="scratchSideBySide">
+                    <div class="scratchTextBox">
+                        <h4 id="scratchTextTitle"> Instructions</h4>
+                        <p>
+                            As a member of the Space Force you have to protect the Moon Base from the alien invasion. If a single alien gets past your line, you lose and are sent back to the start.
+                            <br>
+                            <br>
+                            Click "Enlist Today" to start defending.
+                            ------------------------------------------
+                            Controls
+                            <br>
+                            <br>
+                            W--------Up
+                            <br>
+                            S---------Down
+                            <br>
+                            Space--Fire
+                        </p>
+                        <br>
+                    </div>
+                    <div class="scratchTextBox">
+                        <h4 id="scratchTextTitle"> Notes and Credits</h4>
+                        <p>
+                            Sound Effects:
+                            <br>
+                            "Pew" - Made by recording myself saying the word pew into Audacity where noise was also reduced then exported as an mp3 using the LAME encoder. Mp3 file type was chosen over other formats such as WAV or FLAC because this project wouldn't benefit from a lossless compression and would benefit from a smaller file size that could be accomplished with mp3 which is heavily supported online. Audio was then softened using the built-in sound editor in Scratch after deciding it was too loud.
+                            <br>
+                            ------------------------------------------------------------------------
+                            <br>
+                            Graphics:
+                            <br>
+                            Laser Blast (Blast2) - I created the laser blast using Inkscape so that it could be made as a svg vector file allowing it to be scaled up or down without a loss in quality. This graphic was created this was because I was unsure of what the final dimensions would be, and since vector files save the shape of the curves within the image instead of individual pixels, it could take on any dimensions needed without needing to be redone.
+                            <br>
+                            The graphic was made using the "Draw calligraphic or brush strokes tool" then later converted different vector layers using the trace bitmap tool.
+                            <br>
+                            All other Graphics - I drew the rest of the graphics in Photoshop due to my familiarity with the program. These were exported as PNG files, to allow the use of an alpha channel, but were a lower quality than vector files because of saving pixel color data instead of shapes. The easiest way to see the difference is when comparing the edge of the moon in the background which is highly pixelated and looks like a blocky circle, to the clean smooth edges on the laser blast.
+                            <br>
+                            ------------------------------------------------------------------------
+                            <br>
+                            Operators:
+                            <br>
+                            AND – Used in the “Alien” sprite in the tree starting with “When I receive: An Alien was shot.” The and function is used to check if the “Blast2” sprite is touching the alien clone and making sure it is still within the gameplay window. This was done because the non-clone version of the alien moves to the position the clone spawns in and although it is hidden, it can still be shot and affect the hidden variable “Enemies Alive.” Since both conditions must be true to move forward in the loop, it prevents waves from being ended prematurely.
+                            <br>
+                            OR – Used in the “Blast2” sprite in the tree starting with “When I start as a clone.” The or function was used in the repeat until loop to specify two different cases where the loop could end. This would allow the blast to move across the screen to a certain X position, or until it touched one of the Alien sprite clones.
+                            <br>
+                            NOT – Used in the “Blast2” sprite in the tree starting with “When space key pressed.” This was used to prevent the “Blast2” sprite clones from being spawned when on the title screen before the game started. So when the current wave is 0, which is the default state, it won’t allow them to spawn when space is pressed.
+                            <br>
+                            ------------------------------------------------------------------------
+                            Other required descriptions:
+                            Boolean Logic – Boolean logic is a type of mathematical logic that results in one of two outputs: True or False. All computers today run on Boolean logic where a low voltage results in a digital 0 signal for false and high voltage which results in a digital 1 for true. The actual inner workings of Boolean logic can be broken down into 4 operators: AND, OR, NOT, and XOR. These 4 operators combined in various patterns can create circuits including transistors and are the fundamental building blocks of modern day computers.
+                            <br>
+                            Number Systems - Number systems are a method of writing numbers in different bases. Bases represent the base number that has a power attached to it. In a base 2 number system, also known as binary, 2 is the base number and all numbers in existence can be expressed by a variation of 2's carried to different powers and added together. Overall the world is familiar with a base 10 number system where all numbers are expressed as 10 carried to different powers and added together. Another common base is base 16, or hexadecimal. In hexadecimal, or hex for short, the base is 16 and all numbers are expressed as 16 carried to different powers. Since people are usually only familiar with the digits 0-9, hex had to get creative in order to represent higher numbers. In hex, decimal 10 is represented as A and decimal 15 is represented as F. The numbers in between take B, C, D, and E respectively.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <h2> Personal Projects </h2>
+            <div class="project">
+                <h3 class="projectTitle"> Photoshop Colorizations</h3>
                 <p>
-                  Sound Effects:
-                  <br>
-                  "Pew" - Made by recording myself saying the word pew into Audacity where noise was also reduced then exported as an mp3 using the LAME encoder. Mp3 file type was chosen over other formats such as WAV or FLAC because this project wouldn't benefit from a lossless compression and would benefit from a smaller file size that could be accomplished with mp3 which is heavily supported online. Audio was then softened using the built-in sound editor in Scratch after deciding it was too loud.
-                  <br>
-                  ------------------------------------------------------------------------
-                  <br>
-                  Graphics:
-                  <br>
-                  Laser Blast (Blast2) - I created the laser blast using Inkscape so that it could be made as a svg vector file allowing it to be scaled up or down without a loss in quality. This graphic was created this was because I was unsure of what the final dimensions would be, and since vector files save the shape of the curves within the image instead of individual pixels, it could take on any dimensions needed without needing to be redone.
-                  <br>
-                  The graphic was made using the "Draw calligraphic or brush strokes tool" then later converted different vector layers using the trace bitmap tool. 
-                  <br>
-                  All other Graphics - I drew the rest of the graphics in Photoshop due to my familiarity with the program. These were exported as PNG files, to allow the use of an alpha channel, but were a lower quality than vector files because of saving pixel color data instead of shapes. The easiest way to see the difference is when comparing the edge of the moon in the background which is highly pixelated and looks like a blocky circle, to the clean smooth edges on the laser blast.
-                  <br>
-                  ------------------------------------------------------------------------
-                  <br>
-                  Operators:
-                  <br>
-                  AND – Used in the “Alien” sprite in the tree starting with “When I receive: An Alien was shot.” The and function is used to check if the “Blast2” sprite is touching the alien clone and making sure it is still within the gameplay window. This was done because the non-clone version of the alien moves to the position the clone spawns in and although it is hidden, it can still be shot and affect the hidden variable “Enemies Alive.” Since both conditions must be true to move forward in the loop, it prevents waves from being ended prematurely. 
-                  <br>
-                  OR – Used in the “Blast2” sprite in the tree starting with “When I start as a clone.” The or function was used in the repeat until loop to specify two different cases where the loop could end. This would allow the blast to move across the screen to a certain X position, or until it touched one of the Alien sprite clones.
-                  <br>
-                  NOT – Used in the “Blast2” sprite in the tree starting with “When space key pressed.” This was used to prevent the “Blast2” sprite clones from being spawned when on the title screen before the game started. So when the current wave is 0, which is the default state, it won’t allow them to spawn when space is pressed. 
-                  <br>
-                  ------------------------------------------------------------------------
-                  Other required descriptions:
-                  Boolean Logic – Boolean logic is a type of mathematical logic that results in one of two outputs: True or False.  All computers today run on Boolean logic where a low voltage results in a digital 0 signal for false and high voltage which results in a digital 1 for true.  The actual inner workings of Boolean logic can be broken down into 4 operators: AND, OR, NOT, and XOR.  These 4 operators combined in various patterns can create circuits including transistors and are the fundamental building blocks of modern day computers.
-                  <br>
-                  Number Systems - Number systems are a method of writing numbers in different bases.  Bases represent the base number that has a power attached to it.  In a base 2 number system, also known as binary, 2 is the base number and all numbers in existence can be expressed by a variation of 2's carried to different powers and added together.  Overall the world is familiar with a base 10 number system where all numbers are expressed as 10 carried to different powers and added together.  Another common base is base 16, or hexadecimal.  In hexadecimal, or hex for short, the base is 16 and all numbers are expressed as 16 carried to different powers.  Since people are usually only familiar with the digits 0-9, hex had to get creative in order to represent higher numbers.  In hex, decimal 10 is represented as A and decimal 15 is represented as F.  The numbers in between take B, C, D, and E respectively.
+                    For practice in Photoshop I like to complete requests to colorize old photos on <a href="http://www.Reddit.com/r/colorizationrequests" target="_blank"> reddit </a>. Here are a few examples of pictures I have colored.
                 </p>
-                <br>
-              </div>
-            </div>  
-          </div>
+                <img class="colorizationImage" alt="side by side photo of a soldier with a parachute. Left side is black and white, right side is colored in" src="images/colorizedParatrooper.png" />
+                <img class="colorizationImage" alt="side by side photo of a soldier holding a smoke grenade. Left side is black and white, right side is colored in" src="images/colorizedSmoke.png" />
+                <img class="colorizationImage" alt="side by side photo of a soldier standing in front of a brick wall. Left side is black and white, right side is colored in" src="images/colorizedGrandpa.png" />
 
-
-
-
-
-          <h2> Personal Projects </h2>
-          <div class="project">
-            <h3 class="projectTitle"> Photoshop Colorizations</h3>
-            <p> 
-              For practice in Photoshop I like to complete requests to colorize old photos on <a href="http://www.Reddit.com/r/colorizationrequests" target="_blank"> reddit </a>. Here are a few examples of pictures I have colored.
-            </p>
-            <img class="colorizationImage" alt="side by side photo of a soldier with a parachute. Left side is black and white, right side is colored in" src="images/colorizedParatrooper.png" />
-            <img class="colorizationImage" alt="side by side photo of a soldier holding a smoke grenade. Left side is black and white, right side is colored in" src="images/colorizedSmoke.png" />
-            <img class="colorizationImage" alt="side by side photo of a soldier standing in front of a brick wall. Left side is black and white, right side is colored in" src="images/colorizedGrandpa.png" />
-            
-          </div>
-      </div>
-      <div id="footer">
-        <footer id="footer"></footer>
-      </div>
+            </div>
+        </div>
+        <div id="footer">
+            <footer id="footer"></footer>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
