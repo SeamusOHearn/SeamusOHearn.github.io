@@ -49,8 +49,13 @@
                 <h3 class="projectTitle">Scratch Project - Intro to Computer Science</h3>
                 <p> This project was to make a simple game in Scratch as an introduction coding using Scratch's block-based visual programming language.</p>
                 <br>
-                <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden  -->
-                <iframe id="scratchProjectGame" src="https://jamesbmadden.github.io/scratch-silicon/#282094157" allowFullscreen scrolling="no"></iframe>
+                <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden --> 
+                <!-- <iframe id="scratchProjectGame" src="https://jamesbmadden.github.io/scratch-silicon/#282094157" allowFullscreen scrolling="no"></iframe>-->
+                <!-- Embedded game removed in favor of a video which made load times much faster -->
+                <video id = "scratchProjectGame" controls>
+                    <source = src="./video/scratchProject.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <a class="projectLink" href="https://scratch.mit.edu/projects/282094157/"> Check it out on Scratch!</a>
                 <div id="scratchSideBySide">
                     <div class="scratchTextBox">
@@ -108,6 +113,14 @@
                         <br>
                     </div>
                 </div>
+                <h4 id="scratchAssetsTitle">Game Assets</h4>
+                <div class="assetContainer">
+                    <audio controls class="assetLeftRow">
+                        <source src="./audio/pew.mp3" type="audio/mp3">
+                    </audio>
+                    <p class="assetRightRow">"Pew" Sound Effect</p>
+                </div>
+
             </div>
 
 

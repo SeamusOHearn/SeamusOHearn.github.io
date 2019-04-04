@@ -186,9 +186,8 @@ https://matthewjamestaylor.com/bottom-footer  */
 
 #scratchProjectGame {
     display: block;
-    width: 480px;
-    height: 400px;
-    overflow: hidden;
+    width: 50%;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
@@ -209,11 +208,11 @@ https://matthewjamestaylor.com/bottom-footer  */
 
 #scratchSideBySide {
     display: flex;
-    width: 480px;
+    width:50%;
+    min-width: 480px;
     margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 15px;
-
+    margin-right: auto;  
+    padding:15px;
 }
 
 .scratchTextBox {
@@ -233,6 +232,32 @@ https://matthewjamestaylor.com/bottom-footer  */
     margin-left: 10px;
     margin-right: 10px;
 }
+
+#scratchAssetsTitle{
+    text-align: center;
+}
+
+/*assets*/
+.assetContainer {
+    display: flex;
+    width:50%;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.assetLeftRow {
+    position: relative;
+    width: 50%;
+}
+
+.assetRightRow {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
 
 .colorizationImage {
     width: 50%;
@@ -256,7 +281,6 @@ https://matthewjamestaylor.com/bottom-footer  */
 
 #pdfEmbed {
     padding: 15px; 
-
 }
 
 /* Contact Info Stuff */
