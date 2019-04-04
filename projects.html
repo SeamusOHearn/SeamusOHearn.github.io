@@ -115,11 +115,45 @@
                 </div>
                 <h4 id="scratchAssetsTitle">Game Assets</h4>
                 <div class="assetContainer">
-                    <audio controls class="assetLeftRow">
+                    <audio controls class="assetLeftRow" id="audio">
                         <source src="./audio/pew.mp3" type="audio/mp3">
                     </audio>
                     <p class="assetRightRow">"Pew" Sound Effect</p>
-                </div>              
+                </div>
+                <div class="assetContainer">
+                    <div class="assetLeftRow">
+                        <canvas id="myCanvas" width="330" height="400">
+                            Your doesnt support the HTML5 canvas tag.
+                        </canvas>
+                        <div id="spaceManButtons">
+                            <p><button class="buttons" onclick="firstImage()">State 1</button></p>
+                            <p><button class="buttons" onclick="secondImage()">State 2</button></p>
+                        </div>
+                        <script>
+                            var canvas = document.getElementById("myCanvas");
+                            var ctx = canvas.getContext("2d");
+                            var img1 = new Image();
+                            img1.src = "./images/spaceMan1.png";
+                            var img2 = new Image();
+                            img2.src = "./images/spaceMan2.png";
+                            window.onload = function() {
+                                var canvas = document.getElementById("myCanvas");
+                                var ctx = canvas.getContext("2d");
+                                var img = document.getElementById("spaceMan");
+                                ctx.drawImage(img1,0,0,canvas.width,canvas.height);
+                            };
+                            function firstImage() {
+                                ctx.clearRect(0,0,canvas.width,canvas.height);
+                                ctx.drawImage(img1,0,0,canvas.width,canvas.height);
+                            };
+                            function secondImage() {
+                                ctx.clearRect(0,0,canvas.width,canvas.height);
+                                ctx.drawImage(img2,0,0,canvas.width,canvas.height);
+                            };
+                        </script>
+                    </div>
+                    <p class="assetRightRow">Space Force player character</p>
+                </div>               
             </div>
 
 
