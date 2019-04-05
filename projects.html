@@ -122,9 +122,9 @@
                 </div>
                 <div class="assetContainer">
                     <div class="assetLeftRow">
-                        <canvas id="myCanvas" height=>
+                        <canvas id="myCanvas" alt="image of an astronaut holding a rifle">
                             <!-- width="330" height="400"-->
-                            Your doesnt support the HTML5 canvas tag.
+                            Your browser doesnt support the HTML5 canvas tag.
                         </canvas>
                         <div id="spaceManButtons">
                             <p><button class="buttons" onclick="firstImage()">State 1</button></p>
@@ -154,10 +154,15 @@
                                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                                 ctx.drawImage(img2, 0, 0, canvas.width, canvas.height);
                             };
-
                         </script>
                     </div>
-                    <p class="assetRightRow">Space Force player character</p>
+                    <p class="assetRightRow">Space Force player character. Two states were used to simulate the jetpack propulsion instead of just having static fire.</p>
+                </div>
+                <div class="assetContainer">
+                    <svg class="assetLeftRow" id="svg">
+                        <source src="./images/blast.svg">
+                    </svg>
+                    <p class="assetRightRow">Laser Blast</p>
                 </div>
             </div>
 

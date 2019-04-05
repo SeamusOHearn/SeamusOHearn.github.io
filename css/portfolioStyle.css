@@ -190,7 +190,6 @@ https://matthewjamestaylor.com/bottom-footer  */
     margin-right: auto;
     border: 1px solid black;
     box-shadow: 0 1px 2px 1px gray;
-
 }
 
 .projectTitle {
@@ -261,16 +260,13 @@ https://matthewjamestaylor.com/bottom-footer  */
     position: relative;
     width: 50%;
     text-align: center;
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     height: 100%;
 }
 
 #myCanvas {
     display: block;
-    border: 1px solid black;
-    box-shadow: 0 1px 2px 1px gray;
     width: 100%;
-
 }
 
 .buttons {
@@ -282,6 +278,8 @@ https://matthewjamestaylor.com/bottom-footer  */
     justify-content: center;
 }
 
+
+
 .colorizationImage {
     width: 50%;
     min-width: 480px;
@@ -290,6 +288,9 @@ https://matthewjamestaylor.com/bottom-footer  */
     box-shadow: 0 1px 2px 1px gray;
 }
 
+
+
+/* pdf stuff */
 #fieldsReport {
     display: block;
     width: 50%;
@@ -305,6 +306,12 @@ https://matthewjamestaylor.com/bottom-footer  */
 #pdfEmbed {
     padding: 15px;
 }
+
+#fullResume {
+    text-align: center;
+    padding-top: 25px;
+}
+
 
 /* Contact Info Stuff */
 #contactTable {
@@ -327,8 +334,3 @@ https://matthewjamestaylor.com/bottom-footer  */
     padding: 5px 10px 5px 10px;
 }
 
-#fullResume {
-    text-align: center;
-    padding-top: 25px;
-
-}
