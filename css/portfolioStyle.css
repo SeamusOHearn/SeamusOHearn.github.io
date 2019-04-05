@@ -243,7 +243,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     min-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 15px;
+    padding-bottom: 5%;
 }
 
 .assetLeftRow {
@@ -257,11 +257,14 @@ https://matthewjamestaylor.com/bottom-footer  */
 }
 
 .assetRightRow {
-    position: relative;
-    width: 50%;
     text-align: center;
-    margin: 10px 0 10px 0;
-    height: 100%;
+    margin: auto;
+}
+
+.rightRowText {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
 }
 
 #myCanvas {
@@ -271,6 +274,10 @@ https://matthewjamestaylor.com/bottom-footer  */
 
 .buttons {
     box-shadow: 0 1px 2px 1px gray;
+}
+
+#svg {
+    max-height: 50px;
 }
 
 #spaceManButtons {
