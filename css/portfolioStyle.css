@@ -211,8 +211,8 @@ https://matthewjamestaylor.com/bottom-footer  */
     height: 500px;
     min-height: 480px;
     margin-left: auto;
-    margin-right: auto;  
-    padding:15px;
+    margin-right: auto;
+    padding: 15px;
 }
 
 .scratchTextBox {
@@ -233,17 +233,17 @@ https://matthewjamestaylor.com/bottom-footer  */
     margin-right: 10px;
 }
 
-#scratchAssetsTitle{
+#scratchAssetsTitle {
     text-align: center;
 }
 
 /*assets*/
 .assetContainer {
     display: flex;
-    width:50%;
+    width: 50%;
     min-width: 480px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     padding-bottom: 15px;
 }
 
@@ -252,7 +252,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     width: 50%;
 }
 
-#audio{
+#audio {
     border: 1px solid black;
     box-shadow: 0 1px 2px 1px gray;
 }
@@ -266,16 +266,18 @@ https://matthewjamestaylor.com/bottom-footer  */
 }
 
 #myCanvas {
-    display: block;  
+    display: block;
     border: 1px solid black;
+    box-shadow: 0 1px 2px 1px gray;
+    width: 100%;
+
+}
+
+.buttons {
     box-shadow: 0 1px 2px 1px gray;
 }
 
-.buttons{
-    box-shadow: 0 1px 2px 1px gray;
-    }
-
-#spaceManButtons{
+#spaceManButtons {
     display: flex;
     justify-content: center;
 }
@@ -301,7 +303,7 @@ https://matthewjamestaylor.com/bottom-footer  */
 }
 
 #pdfEmbed {
-    padding: 15px; 
+    padding: 15px;
 }
 
 /* Contact Info Stuff */

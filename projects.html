@@ -49,12 +49,12 @@
                 <h3 class="projectTitle">Scratch Project - Intro to Computer Science</h3>
                 <p> This project was to make a simple game in Scratch as an introduction coding using Scratch's block-based visual programming language.</p>
                 <br>
-                <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden --> 
+                <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden -->
                 <!-- <iframe id="scratchProjectGame" src="https://jamesbmadden.github.io/scratch-silicon/#282094157" allowFullscreen scrolling="no"></iframe>-->
                 <!-- Embedded game removed in favor of a video which made load times much faster -->
-                <video id = "scratchProjectGame" controls>
-                    <source = src="./video/scratchProject.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                <video id="scratchProjectGame" controls>
+                    <source=src="./video/scratchProject.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
                 </video>
                 <a class="projectLink" href="https://scratch.mit.edu/projects/282094157/"> Check it out on Scratch!</a>
                 <div id="scratchSideBySide">
@@ -122,7 +122,8 @@
                 </div>
                 <div class="assetContainer">
                     <div class="assetLeftRow">
-                        <canvas id="myCanvas" width="330" height="400">
+                        <canvas id="myCanvas" height=>
+                            <!-- width="330" height="400"-->
                             Your doesnt support the HTML5 canvas tag.
                         </canvas>
                         <div id="spaceManButtons">
@@ -131,6 +132,7 @@
                         </div>
                         <script>
                             var canvas = document.getElementById("myCanvas");
+                            canvas.height = canvas.width * 1.5445;
                             var ctx = canvas.getContext("2d");
                             var img1 = new Image();
                             img1.src = "./images/spaceMan1.png";
@@ -140,20 +142,23 @@
                                 var canvas = document.getElementById("myCanvas");
                                 var ctx = canvas.getContext("2d");
                                 var img = document.getElementById("spaceMan");
-                                ctx.drawImage(img1,0,0,canvas.width,canvas.height);
+                                ctx.drawImage(img1, 0, 0, canvas.width, canvas.height);
                             };
+
                             function firstImage() {
-                                ctx.clearRect(0,0,canvas.width,canvas.height);
-                                ctx.drawImage(img1,0,0,canvas.width,canvas.height);
+                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                                ctx.drawImage(img1, 0, 0, canvas.width, canvas.height);
                             };
+
                             function secondImage() {
-                                ctx.clearRect(0,0,canvas.width,canvas.height);
-                                ctx.drawImage(img2,0,0,canvas.width,canvas.height);
+                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                                ctx.drawImage(img2, 0, 0, canvas.width, canvas.height);
                             };
+
                         </script>
                     </div>
                     <p class="assetRightRow">Space Force player character</p>
-                </div>               
+                </div>
             </div>
 
 
