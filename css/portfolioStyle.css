@@ -352,3 +352,42 @@ https://matthewjamestaylor.com/bottom-footer  */
     font-family: sans-serif;
     padding: 5px 10px 5px 10px;
 }
+
+.recName {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.recRel {
+    padding: 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.recLink {
+    padding: 0px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.recText {
+    padding: 0px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
