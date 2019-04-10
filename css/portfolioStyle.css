@@ -44,6 +44,7 @@ a {
 }
 
 .center {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -56,6 +57,7 @@ nav {
     padding: 0;
     margin-left: 15%;
 }
+
 
 .topNav {
     float: left;
@@ -162,9 +164,22 @@ https://matthewjamestaylor.com/bottom-footer  */
     margin: 25px 15% 0 15%;
     display: flex;
     justify-content: space-around;
-
 }
 
+.badge {
+    width: auto;
+    height:100%;
+    max-width: 30%;
+}
+
+#msftDigitalLiteracy {
+    width: 50%;
+    min-height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 2px 1px gray;
+}
 
 
 /* Scratch Project */
