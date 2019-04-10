@@ -1,7 +1,7 @@
 html,
 body {
     background-color: white;
-    font-family: garamond;
+    font-family: sans-serif;
     margin: 0 auto;
     height: 100%;
 }
@@ -29,14 +29,24 @@ h4 {
 }
 
 p {
-    font-size: 12pt;
+    font-size: 16pt;
     font-family: sans-serif;
     margin: auto 20% auto 20%;
     display: block;
 }
 
+a {
+    font-weight: bold;
+}
+
 .pIgnoreMarginPadding {
     margin-left: 0px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
@@ -89,6 +99,10 @@ nav {
     margin-right: auto;
     box-shadow: 0 1px 2px 1px gray;
     margin: 10px auto 30px auto;
+}
+
+#aboutMeText {
+    padding-bottom: 5%;
 }
 
 /*containers to fix footer on pages with low content thanks to
