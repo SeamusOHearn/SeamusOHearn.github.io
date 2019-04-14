@@ -1,14 +1,22 @@
 :root {
     /*setting colors*/
+    --textColor: #C5C6C7;
+    --darkestColor: #10141A;
+    --midColor: #1F2833;
+    --lightColor: #B0C0D1;
+    --ultraLightColor: #66FCF1;
+    --highlight: #4CB0AB;
+}
+
+/* old color schemes
+blue with yellow
     --textColor: white;
     --darkestColor: #002025;
     --midColor: #106673;
     --lightColor: #8CB9BE;
     --ultraLightColor: #0C6976;
     --highlight: #D7B843;
-}
 
-/* old color schemes
 black and gray
 
     --textColor: white;
