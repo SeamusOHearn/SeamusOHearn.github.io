@@ -1,7 +1,7 @@
 :root {
     /*setting colors*/
     --textColor: #C5C6C7;
-    --darkestColor: #10141A;
+    --darkestColor: #13171F;
     --midColor: #1F2833;
     --lightColor: #B0C0D1;
     --ultraLightColor: #66FCF1;
@@ -134,7 +134,7 @@ nav {
 
 #activeTab {
     background-color: var(--darkestColor);
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
     color: var(--highlight);
 }
 
@@ -144,7 +144,7 @@ nav {
     background-color: var(--midColor);
     max-height: 500px;
     width: 100%;
-    box-shadow: 2px 1px 2px 1px var(--darkestColor);
+    box-shadow: 2px 1px 2px 1px black;
 }
 
 .bannerImage {
@@ -159,7 +159,7 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
     margin: 10px auto 30px auto;
 }
 
@@ -180,7 +180,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     width: 100%;
     margin-top: 0;
     border: 1px;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 #body {
@@ -194,7 +194,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     height: 75px;
     background-color: var(--midColor);
     margin-top: 200px;
-    box-shadow: 2px 1px 2px 1px var(--darkestColor);
+    box-shadow: 2px 1px 2px 1px black;
 }
 
 
@@ -240,7 +240,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 
@@ -251,7 +251,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     background-color: var(--darkestColor);
     border: solid black;
     border-radius: 3px;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
     margin: 25px 10% 25px 10%;
 }
 
@@ -262,7 +262,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 .projectTitle {
@@ -295,7 +295,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: var(--textColor);
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 .scratchTextBox p {
@@ -330,7 +330,7 @@ https://matthewjamestaylor.com/bottom-footer  */
 
 #audio {
     border: 1px solid black;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 .assetRightRow {
@@ -355,7 +355,7 @@ https://matthewjamestaylor.com/bottom-footer  */
 }
 
 .buttons {
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 #svg {
@@ -370,7 +370,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     min-width: 480px;
     display: block;
     margin: 20px auto 20px auto;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 
@@ -385,7 +385,7 @@ https://matthewjamestaylor.com/bottom-footer  */
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
-    box-shadow: 0 1px 2px 1px var(--darkestColor);
+    box-shadow: 0 1px 2px 1px black;
 }
 
 #pdfEmbed {
