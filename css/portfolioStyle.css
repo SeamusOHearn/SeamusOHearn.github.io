@@ -21,11 +21,19 @@ black and gray
 blue
 
     --textColor: white;
-    --darkestColor: #011C26;
+    --darkestColor: #cccccc;
     --midColor: #012E40;
     --lightColor: #2F6073;
     --ultraLightColor: #6393A6;
     --highlight: #D8E8F2;
+
+original
+    --textColor: black;
+    --darkestColor: #1a1a1a;
+    --midColor: #363636;
+    --lightColor: #011C26;
+    --ultraLightColor: none;
+    --highlight: none;
 
 */
 
