@@ -5,7 +5,7 @@
     --lightColor: #B0C0D1;
     --ultraLightColor: #66FCF1;
     --highlight: #4CB0AB;
-    --textColor: var(--lightColor);
+    --textColor: white;
 }
 
 /* old color schemes
@@ -253,6 +253,20 @@ https://matthewjamestaylor.com/bottom-footer  */
     border-radius: 3px;
     box-shadow: 0 1px 2px 1px black;
     margin: 25px 10% 25px 10%;
+}
+
+.projectDescription {
+    padding-bottom: 2%;
+}
+
+.centerButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#averageOutput {
+    height: 5%;
 }
 
 #scratchProjectGame {

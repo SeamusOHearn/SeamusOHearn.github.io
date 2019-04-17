@@ -35,9 +35,48 @@
 
 
             <h1> School Work </h1>
+
+            <div class="project">
+                <h3 class="projectTitle"> Average Test Grades </h3>
+                <p class="projectDescription">
+                    An exercise in using arrays to store data to be retrieved later. Pressing "Get Average" will ask how many tests you took, followed by a prompt for the grade on each test. After all the grades are entered it will return your average grade.
+                </p>
+                <button type="button" onclick="calcAverage()" class="centerButton"> Get Average </button>
+                <p id="averageOutput" class="projectDescription"></p>
+
+                <script>
+                    function calcAverage() {
+                        var total = 0;
+                        var testNum = 1;
+                        var numTests;
+                        var testString;
+                        var testScores = [];
+                        numTests = parseInt(prompt("How many tests did you take?"));
+                        while (testNum <= numTests) {
+                            testString = prompt("Enter test score for test #" + testNum);
+                            total = total + parseInt(testString);
+                            testScores.push(testString);
+                            testNum++;
+                        }
+
+                        var testAverage;
+
+                        // Processing
+
+                        testAverage = total / numTests;
+
+                        // Output
+                        document.getElementById("averageOutput").innerHTML = ("Your average score is: " + testAverage + " from the scores " + testScores);
+
+
+                    }
+
+                </script>
+            </div>
+
             <div class="project">
                 <h3 class="projectTitle"> Fields Report </h3>
-                <p>
+                <p class="projectDescription">
                     A report for COP1500, Intro to Computer Science, where we were asked to distinguish between computer science, software engineering, and information technology as well as describe at least three fields of computer science. You can read it below, or download it <a href="./docs/fieldsReport.pdf"> here</a>.
                 </p>
                 <div id="pdfEmbed">
@@ -47,7 +86,7 @@
             </div>
             <div class="project">
                 <h3 class="projectTitle">Scratch Project - Intro to Computer Science</h3>
-                <p> This project was to make a simple game in Scratch as an introduction coding using Scratch's block-based visual programming language.</p>
+                <p class="projectDescription"> This project was to make a simple game in Scratch as an introduction coding using Scratch's block-based visual programming language.</p>
                 <br>
                 <!-- Scratch project embedded using Scratch-Silicon from JamesBMadden on github https://github.com/jamesbmadden -->
                 <!-- <iframe id="scratchProjectGame" src="https://jamesbmadden.github.io/scratch-silicon/#282094157" allowFullscreen scrolling="no"></iframe>-->
@@ -189,7 +228,7 @@
             <h1> Personal Projects </h1>
             <div class="project">
                 <h3 class="projectTitle"> Photoshop Colorizations</h3>
-                <p>
+                <p class="projectDescription">
                     For practice in Photoshop I like to complete requests to colorize old photos on <a href="http://www.Reddit.com/r/colorizationrequests" target="_blank"> Reddit </a>. Here are a few examples of pictures I have colored.
                 </p>
                 <img class="colorizationImage" alt="side by side photo of a soldier with a parachute. Left side is black and white, right side is colored in" src="images/colorizedParatrooperSmall.png" />
