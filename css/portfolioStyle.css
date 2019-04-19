@@ -66,6 +66,7 @@ h2 {
     font-size: 20pt;
     margin: 2% 10% 2% 10%;
     color: var(--ultraLightColor);
+    background-color: var(--darkestColor);
 }
 
 
@@ -91,7 +92,6 @@ p {
     margin: auto 10% auto 10%;
     display: block;
     color: var(--textColor);
-    background-color: var(--darkestColor);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -126,6 +126,7 @@ nav {
     padding: 25px 16px;
     border: 1px solid;
     border-color: var(--darkestColor);
+    background-color: var(--midColor);
     color: var(--textColor);
     font-size: 16pt;
     font-weight: 1000;
