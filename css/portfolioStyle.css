@@ -91,11 +91,13 @@ p {
     margin: auto 10% auto 10%;
     display: block;
     color: var(--textColor);
+    background-color: var(--darkestColor);
 }
 
-a {
+a:link, a:visited, a:hover, a:active {
     font-weight: bold;
     color: var(--ultraLightColor);
+    background-color: var(--darkestColor);
 }
 
 .pIgnoreMarginPadding {
@@ -439,6 +441,7 @@ https://matthewjamestaylor.com/bottom-footer  */
 
 td a {
     color: var(--textColor);
+    background-color: var(--darkestColor);
 }
 
 .recName {
@@ -477,4 +480,11 @@ td a {
     display: block;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+
+/* alt text contrast */
+
+img, canvas, video {
+    color: var(--textColor);
 }

@@ -65,7 +65,12 @@
                         testAverage = total / numTests;
 
                         // Output
-                        document.getElementById("averageOutput").innerHTML = ("Your average score is: " + testAverage + " from the scores " + testScores);
+
+                        if (numTests === 0 || isNaN(numTests)){
+                            document.getElementById("averageOutput").innerHTML = ("You didn't take any tests.");
+                        } else {
+                            document.getElementById("averageOutput").innerHTML = ("Your average score is: " + testAverage + " from the scores " + testScores);
+                        }
                     }
 
                 </script>
