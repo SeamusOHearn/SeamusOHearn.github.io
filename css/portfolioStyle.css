@@ -49,7 +49,8 @@ h5 {
     color: var(--textColor);
 }
 
-p, label {
+p,
+label {
     font-size: 16pt;
     font-family: sans-serif;
     margin: auto 10% auto 10%;
