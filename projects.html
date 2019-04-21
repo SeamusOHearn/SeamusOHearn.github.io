@@ -37,6 +37,41 @@
             <h1> School Work </h1>
 
             <div class="project">
+                <h3 class="projectTitle"> Caesar Cipher </h3>
+                <p class="projectDescription">
+                    Project to make a caesar cipher that takes a users input and encrypts it by taking the ascii code from each character and moving it to the right 3. So an input of A would become D.
+                </p>
+                <div class="center">
+                    <input id="caesarInput">
+                </div>
+                <div class="center" id="caesarButtons">
+                    <button type="button" onclick="caesar(3)"> Encrypt </button>
+                    <button type="button" onclick="caesar(-3)"> Decrypt </button>
+                </div>
+
+
+                <script>
+                    function caesar(a) {
+                        //input. take input from input field id="caesarInput"
+                        var input = document.getElementById("caesarInput").value;
+                        var direction = parseInt(a);
+                        var output = "";
+
+                        //processing. for each digit in input, use charCodeAt, add 3
+                        for (i = 0; i < input.length; i++) {
+                            var inChar = input.charCodeAt(i);
+                            var outCharPos = inChar + direction;
+                            var outChar = String.fromCharCode(outCharPos);
+                            output = output + outChar;
+                        }
+                        //output. output encrypted input to either the p id="caesarOutput" or back into the input field if adding a decrypt option
+                        document.getElementById("caesarInput").value = (output);
+                    }
+
+                </script>
+            </div>
+
+            <div class="project">
                 <h3 class="projectTitle"> Average Test Grades </h3>
                 <p class="projectDescription">
                     An exercise in using arrays to store data to be retrieved later. Pressing "Get Average" will ask how many tests you took, followed by a prompt for the grade on each test. After all the grades are entered it will return your average grade.
@@ -58,7 +93,7 @@
                             testScores.push(testString);
                             testNum++;
                         }
-                        
+
                         var testAverage;
 
                         // Processing
@@ -66,7 +101,7 @@
 
                         // Output
 
-                        if (numTests === 0 || isNaN(numTests)){
+                        if (numTests === 0 || isNaN(numTests)) {
                             document.getElementById("averageOutput").innerHTML = ("You didn't take any tests.");
                         } else {
                             document.getElementById("averageOutput").innerHTML = ("Your average score is: " + testAverage + " from the scores " + testScores);

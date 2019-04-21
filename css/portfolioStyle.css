@@ -94,10 +94,12 @@ p {
     color: var(--textColor);
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
     font-weight: bold;
     color: var(--ultraLightColor);
-    background-color: var(--darkestColor);
 }
 
 .pIgnoreMarginPadding {
@@ -125,7 +127,7 @@ nav {
     display: block;
     padding: 25px 16px;
     border: 1px solid;
-    border-color: var(--darkestColor);
+    border-color: black;
     background-color: var(--midColor);
     color: var(--textColor);
     font-size: 16pt;
@@ -133,6 +135,7 @@ nav {
     height: 23px;
     width: auto;
     text-align: center;
+    box-shadow: 0 1px 2px 1px black;
 }
 
 #activeTab {
@@ -486,6 +489,18 @@ td a {
 
 /* alt text contrast */
 
-img, canvas, video {
+img,
+canvas,
+video {
     color: var(--textColor);
+    background-color: var(--darkestColor);
+}
+
+#caesarInput {
+    width: 50%;
+}
+
+#caesarButtons {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
