@@ -8,43 +8,6 @@
     --textColor: white;
 }
 
-/* old color schemes
-blue with yellow
-    --textColor: white;
-    --darkestColor: #002025;
-    --midColor: #106673;
-    --lightColor: #8CB9BE;
-    --ultraLightColor: #0C6976;
-    --highlight: #D7B843;
-
-black and gray
-
-    --textColor: white;
-    --darkestColor: #0D0D0D;
-    --midColor: #262626;
-    --lightColor: #737373;
-    --ultraLightColor: #BFBFBF;
-    --highlight: #F2F2F2;
-
-blue
-
-    --textColor: white;
-    --darkestColor: #cccccc;
-    --midColor: #012E40;
-    --lightColor: #2F6073;
-    --ultraLightColor: #6393A6;
-    --highlight: #D8E8F2;
-
-original
-    --textColor: black;
-    --darkestColor: #1a1a1a;
-    --midColor: #363636;
-    --lightColor: #011C26;
-    --ultraLightColor: none;
-    --highlight: none;
-
-*/
-
 html,
 body {
     background-color: var(--lightColor);
@@ -86,7 +49,7 @@ h5 {
     color: var(--textColor);
 }
 
-p {
+p, label {
     font-size: 16pt;
     font-family: sans-serif;
     margin: auto 10% auto 10%;
