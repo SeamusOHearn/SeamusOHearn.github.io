@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <!-- Link to CSS style sheet -->
     <link rel="stylesheet" type="text/css" href="css/portfolioStyle.css">
-    <title> Projects | Seamus O&#8217Hearn </title>
+    <title> Projects | Seamus O&#8217;Hearn </title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
             <div class="project">
                 <h3 class="projectTitle"> Caesar Cipher </h3>
                 <p class="projectDescription">
-                    Project to make a Caesar cipher that takes a user's input and encrypts it by taking the ascii code from each character and moving it to the right 3. So, an input of A would become D.
+                    Project to make a Caesar cipher that takes a user's input and encrypts it by taking the ascii code from each character and moving it in the alphabet by a specified amount. So, an input of A being moved 3 places would become D.
                 </p>
                 <div class="center">
                     <label for="caesarInput">Input text you want encrypted</label>
@@ -47,9 +47,15 @@
                 <div class="center">
                     <input id="caesarInput">
                 </div>
+                <div class="center">
+                    <label for="caesarNumber">How far do you want to move the letters? </br> Positive numbers will move it to the right, negative to the left.</label>
+                </div>
+                <div class="center">
+                    <input id="caesarNumber" type="number" min="-99" max="99" step="1" value="3">
+                </div>
                 <div class="center" id="caesarButtons">
-                    <button type="button" onclick="caesar(3)" class="buttons"> Encrypt </button>
-                    <button type="button" onclick="caesar(-3)" class="buttons"> Decrypt </button>
+                    <button type="button" onclick="caesar(1)" class="buttons"> Encrypt </button>
+                    <button type="button" onclick="caesar(-1)" class="buttons"> Decrypt </button>
                 </div>
 
 
@@ -57,21 +63,43 @@
                     function caesar(a) {
                         //input. take input from input field id="caesarInput"
                         var input = document.getElementById("caesarInput").value;
-                        var direction = parseInt(a);
+                        var direction = (parseInt(document.getElementById("caesarNumber").value)) * a;
                         var output = "";
 
                         //processing. for each digit in input, use charCodeAt, add 3
                         for (i = 0; i < input.length; i++) {
-                            var inChar = input.charCodeAt(i);
-                            var outCharPos = inChar + direction;
-                            var outChar = String.fromCharCode(outCharPos);
-                            output = output + outChar;
+                            var inChar = input.charCodeAt(i); //get the decimal value from the ascii character for math purposes.
+                            if ((inChar >= 65 && inChar <= 90) || (inChar >= 97 && inChar <= 122)) { //if the character is a capital or lowercase letter then make a change
+                                var outCharPos = inChar + direction; //determines the new letter
+                                switch (true) {
+                                    case outCharPos < 65: //if capital letter is moved lower than A
+                                        outCharPos = 91 - (65 - outCharPos);
+                                        break;
+                                    case outCharPos > 90 && inChar <= 90: // if capital letter is moved higher than Z
+                                        outCharPos = (outCharPos - 90) + 64;
+                                        break;
+                                    case outCharPos < 97 && inChar >= 97: // if lower case letter is moved lower than a
+                                        outCharPos = 123 - (97 - outCharPos);
+                                        break;
+                                    case outCharPos > 122: // if lower case letter is moved higher than z
+                                        outCharPos = (outCharPos - 122) + 96;
+                                        break;
+                                    default:
+                                        outCharPos = inChar + direction; //adds the chosen value to the character       
+                                }
+                                var outChar = String.fromCharCode(outCharPos); //converts back from decimal to ascii
+                                output = output + outChar;
+                            } else { // if its not a letter leave it alone
+                                output = output + input[i];
+                            }
                         }
                         //output. output encrypted input to either the p id="caesarOutput" or back into the input field if adding a decrypt option
                         document.getElementById("caesarInput").value = (output);
                     }
 
                 </script>
+
+
             </div>
 
             <div class="project">
