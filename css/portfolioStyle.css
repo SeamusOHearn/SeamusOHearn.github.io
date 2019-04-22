@@ -1,5 +1,4 @@
 :root {
-    /*setting colors*/
     --darkestColor: #13171F;
     --midColor: #1F2833;
     --lightColor: #B0C0D1;
@@ -95,7 +94,7 @@ nav {
     background-color: var(--midColor);
     color: var(--textColor);
     font-size: 16pt;
-    font-weight: 1000;
+    font-weight: 900;
     height: 23px;
     width: auto;
     text-align: center;
