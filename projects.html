@@ -61,45 +61,59 @@
 
                 <script>
                     function caesar(a) {
-                        //input. take input from input field id="caesarInput"
+                        //input
                         var input = document.getElementById("caesarInput").value;
                         var direction = (parseInt(document.getElementById("caesarNumber").value)) * a;
                         var output = "";
 
-                        //processing. for each digit in input, use charCodeAt, add 3
+                        //processing
                         for (i = 0; i < input.length; i++) {
-                            var inChar = input.charCodeAt(i); //get the decimal value from the ascii character for math purposes.
-                            if ((inChar >= 65 && inChar <= 90) || (inChar >= 97 && inChar <= 122)) { //if the character is a capital or lowercase letter then make a change
+                            //get the decimal value from the ascii character for math purposes.
+                            var inChar = input.charCodeAt(i);
+
+                            //if the character is a capital or lowercase letter then make a change
+                            if ((inChar >= 65 && inChar <= 90) || (inChar >= 97 && inChar <= 122)) {
                                 var outCharPos = inChar + direction; //determines the new letter
+
                                 switch (true) {
-                                    case outCharPos < 65: //if capital letter is moved lower than A
+                                    //if capital letter is moved lower than A
+                                    case outCharPos < 65:
                                         outCharPos = 91 - (65 - outCharPos);
                                         break;
-                                    case outCharPos > 90 && inChar <= 90: // if capital letter is moved higher than Z
+
+                                        // if capital letter is moved higher than Z
+                                    case outCharPos > 90 && inChar <= 90:
                                         outCharPos = (outCharPos - 90) + 64;
                                         break;
-                                    case outCharPos < 97 && inChar >= 97: // if lower case letter is moved lower than a
+
+                                        // if lower case letter is moved lower than a
+                                    case outCharPos < 97 && inChar >= 97:
                                         outCharPos = 123 - (97 - outCharPos);
                                         break;
-                                    case outCharPos > 122: // if lower case letter is moved higher than z
+
+                                        // if lower case letter is moved higher than z
+                                    case outCharPos > 122:
                                         outCharPos = (outCharPos - 122) + 96;
                                         break;
+
                                     default:
-                                        outCharPos = inChar + direction; //adds the chosen value to the character       
+                                        //adds the chosen value to the character
+                                        outCharPos = inChar + direction;
                                 }
                                 var outChar = String.fromCharCode(outCharPos); //converts back from decimal to ascii
                                 output = output + outChar;
-                            } else { // if its not a letter leave it alone
+
+                                // if its not a letter leave it alone
+                            } else {
                                 output = output + input[i];
                             }
                         }
-                        //output. output encrypted input to either the p id="caesarOutput" or back into the input field if adding a decrypt option
+
+                        //output
                         document.getElementById("caesarInput").value = (output);
                     }
 
                 </script>
-
-
             </div>
 
             <div class="project">
@@ -117,21 +131,26 @@
                         var numTests;
                         var testString;
                         var testScores = [];
+
+                        //prompt user for total number of tests
                         numTests = parseInt(prompt("How many tests did you take?"));
+
+
                         while (testNum <= numTests) {
+                            //get score for each test
                             testString = prompt("Enter test score for test #" + testNum);
                             total = total + parseInt(testString);
                             testScores.push(testString);
                             testNum++;
                         }
 
-                        var testAverage;
-
                         // Processing
-                        testAverage = total / numTests;
+                        var testAverage = total / numTests;
 
                         // Output
 
+
+                        //if they entered 0, something that isnt a number, or left the first prompt blank return an error.
                         if (numTests === 0 || isNaN(numTests)) {
                             document.getElementById("averageOutput").innerHTML = ("You didn't take any tests.");
                         } else {
