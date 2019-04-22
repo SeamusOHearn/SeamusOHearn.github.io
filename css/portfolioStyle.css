@@ -472,3 +472,7 @@ video {
 .buttons {
     box-shadow: 2px 1px 2px 1px black;
 }
+
+input {
+    box-shadow: 2px 1px 2px 1px black;
+}
