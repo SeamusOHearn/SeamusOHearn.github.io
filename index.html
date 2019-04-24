@@ -24,7 +24,7 @@
 
         <div id="body">
             <!-- Welcome -->
-            <h1> Seamus O&#8217;Hearn's Portfolio </h1>
+            <h1 id="myName"> Seamus O&#8217;Hearn </h1>
 
             <div class="banner">
                 <!-- drive photo from Panumas Nikhomkhai on pexels.com -->
@@ -32,31 +32,9 @@
             </div> <!-- end banner div -->
 
             <div id="aboutMe" class="project">
-                <h2> About this site </h2>
-                <p> This site is used to showcase my current and past projects as I continue to learn about software engineering at Florida Gulf Coast University. I will routinely update the site as I progress through the degree program with completed and in progress long term projects on the <a href="./projects.html"> projects page. </a>
-                </p>
-
-                <h3 class="center"> Accessibility </h3>
-                <p>
-                    This site was made with accessibility for everyone in mind. In order to allow this site to be easily accessible by anyone the following things have been done.
-                    <br>
-                    All images have alternative text for those who use screen readers.
-                    <br>
-                    Overall layout has been kept simple and easy to follow.
-                    <br>
-                    Content is easy to read and (hopefully) free of spelling and grammar errors.
-                    <br>
-                    Text sufficiently contrasts with the background behind it according to the WAVE Web Accessibility Tool for those with visual impairments.
-                    <br>
-                    If I can do anything else to help make the site accessible to all, please let me know.
-                    <br>
-                    All links to PDFs are clearly labeled since they aren't always compatible with accessibility programs.
-
-                </p>
-
                 <h2> About Me </h2>
                 <img id="profilePic" alt="Picture of Seamus O#8217Hearn" src="images/profilePic.jpg" />
-                <p id="aboutMeText">
+                <p class="aboutMeText">
                     Hi, my name is Seamus and I’m currently a software engineering student at Florida Gulf Coast University. Growing up I always enjoyed solving problems. Whether I was presented with a puzzle or a riddle, I was always up for the challenge and found joy in solving the problem. So naturally when I was first introduced to programming with Python during a class for my first degree, in computer animation, I was instantly hooked. It took a few years before I made the decision to return to school to learn more about this passion, but I’ve been loving every moment since.
                     <br>
                     <br>
@@ -67,6 +45,39 @@
 
                 </p>
             </div> <!-- end about me div -->
+
+            <div id="aboutSite" class="project">
+                <h2> About this site </h2>
+                <p> This site is used to showcase my current and past projects as I continue to learn about software engineering at Florida Gulf Coast University. I will routinely update the site as I progress through the degree program with completed and in progress long term projects on the <a href="./projects.html"> projects page. </a>
+                </p>
+
+                <h3 class="center"> Accessibility </h3>
+
+                <p>This site was made with accessibility for everyone in mind. In order to allow this site to be easily accessible by anyone the following things have been done.
+                </p>
+                <ul id="accessibilityList">
+                    <li class="expBullets">
+                        All images have alternative text for those who use screen readers.
+                    </li>
+                    <li class="expBullets">
+                        Overall layout has been kept simple and easy to follow.
+                    </li>
+                    <li class="expBullets">
+                        Content is easy to read and (hopefully) free of spelling and grammar errors.
+                    </li>
+                    <li class="expBullets">
+                        Text sufficiently contrasts with the background behind it according to the <a href="http://wave.webaim.org/">WAVE Web Accessibility Tool</a>  for those with visual impairments.
+                    </li>
+                    <li class="expBullets">
+                        All links to PDFs are clearly labeled since they aren't always compatible with accessibility programs.
+                    </li>
+                </ul>
+                <p class="aboutMeText">
+                    If I can do anything else to help make the site accessible to all, please let me know.
+                </p>
+            </div>
+
+
         </div> <!-- end body div -->
         <div id="footer">
             <footer></footer>
